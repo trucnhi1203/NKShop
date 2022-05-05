@@ -19,6 +19,8 @@ const ShopSection = (props) => {
   const categoriesList = useSelector((state) => state.categoriesList);
   const { categories } = categoriesList;
 
+  console.log(products, page, pages);
+
   useEffect(() => {
     dispatch(listProduct(keyword, pagenumber, filter, category));
     dispatch(listCategories());
